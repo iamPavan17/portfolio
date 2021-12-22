@@ -27,6 +27,12 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  // @media (max-width: 500px) {
+  //   html, body {
+  //     font-size: 12.5%;
+  //   }
+  // }
 `;
 
 export default GlobalStyle;
