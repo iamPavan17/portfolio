@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "components/UI/Text";
+import { Text } from "components/UI";
 import { StyledHeader, StyledList } from "./styles";
 
 export default function Header() {

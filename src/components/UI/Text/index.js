@@ -33,7 +33,7 @@ const StyledText = styled.p`
 
 /**
  * themed Text component
- * css - For additional stylings
+ *** css - For additional stylings
  */
 export function Text({
   children,
@@ -63,6 +63,15 @@ export function Text({
     </StyledText>
   );
 }
+
+Text.defaultProps = {
+  color: "default",
+  fontSize: "body",
+  fontWeight: "regular",
+  textAlign: "initial",
+  textTransform: "none",
+  display: "block",
+};
 
 Text.propTypes = {
   children: PropTypes.oneOfType([
@@ -96,13 +105,4 @@ Text.propTypes = {
   letterSpacing: PropTypes.number,
   lineHeight: PropTypes.number,
   css: PropTypes.array,
-};
-
-Text.defaultProps = {
-  color: "default",
-  fontSize: "body",
-  fontWeight: "regular",
-  textAlign: "initial",
-  textTransform: "none",
-  display: "block",
 };

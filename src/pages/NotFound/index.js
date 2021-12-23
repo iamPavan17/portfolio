@@ -1,7 +1,6 @@
 import React from "react";
-import { Flex } from "components/UI/Layout";
-import { Text } from "components/UI/Text";
-import { marginBottom } from "./styles";
+import { Flex, Text } from "components/UI";
+import { margin } from "./styles";
 
 export default function NotFound() {
   return (
@@ -13,7 +12,7 @@ export default function NotFound() {
       gap="0.8rem"
     >
       <Text fontSize={18}>404</Text>
-      <Text fontSize={4.8} css={marginBottom}>
+      <Text fontSize={4.8} css={margin}>
         Page not found
       </Text>
       <Text fontSize={2} fontWeight="bold">
