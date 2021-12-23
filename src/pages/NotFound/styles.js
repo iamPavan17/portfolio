@@ -1,5 +1,7 @@
-import styled from "styled-components";
+import { css } from "styled-components";
 
-const StyledSection = styled.div``;
+const marginBottom = css`
+  margin-bottom: 3.6rem;
+`;
 
-export { StyledSection };
+export { marginBottom };
