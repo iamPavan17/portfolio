@@ -1,16 +1,27 @@
 import React from "react";
+import { Text } from "components/UI/Text";
 import { StyledHeader, StyledList } from "./styles";
 
 export default function Header() {
   return (
     <StyledHeader>
-      <div style={{ fontSize: "20px" }}>PAVAN.</div>
+      <Text fontSize={2} fontWeight="bold">
+        PORTFOLIO .
+      </Text>
       <nav>
         <StyledList>
-          <li>About</li>
-          <li>Resume</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <Text fontSize={1.8}>About</Text>
+          </li>
+          <li>
+            <Text fontSize={1.8}>Resume</Text>
+          </li>
+          <li>
+            <Text fontSize={1.8}>Projects</Text>
+          </li>
+          <li>
+            <Text fontSize={1.8}>Contact</Text>
+          </li>
         </StyledList>
       </nav>
     </StyledHeader>

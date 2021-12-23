@@ -12,7 +12,7 @@ const StyledHeader = styled.div`
 const StyledList = styled.ul`
   display: flex;
   flex-direction: row;
-  gap: 1.8rem;
+  gap: 2.4rem;
   font-size: 2rem;
   list-style: none;
 `;
