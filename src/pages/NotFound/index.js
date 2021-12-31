@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Text, Link } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
+import { ABOUT_ROUTE } from "App/routes";
 import ArrowRightIcon from "./assets/ArrowRight.svg";
 import { StyledImg, margin, onHoverStyle } from "./styles";
 
@@ -18,7 +19,7 @@ export default function NotFound() {
       <Text fontSize={4.4} css={margin}>
         Page not found
       </Text>
-      <Link to="/" css={onHoverStyle}>
+      <Link to={ABOUT_ROUTE} css={onHoverStyle}>
         <Flex alignItems="flex-start" gap="1.2rem">
           <Text fontSize={textTheme.fontSize.h5} fontWeight="bold">
             Go Home

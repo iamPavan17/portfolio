@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StyledHeader = styled.div`
   display: flex;
@@ -17,4 +17,12 @@ const StyledList = styled.ul`
   list-style: none;
 `;
 
-export { StyledHeader, StyledList };
+const onHoverStyle = css`
+  transition: all 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+export { StyledHeader, StyledList, onHoverStyle };

@@ -16,9 +16,8 @@ import { CONTACT_ROUTE } from "pages/Contact/constants";
 export default function App() {
   return (
     <React.Fragment>
-      <Header />
-
       <BrowserRouter>
+        <Header />
         <Switch>
           <Route exact path={ABOUT_ROUTE} component={About} />
           <Route exact path={RESUME_ROUTE} component={Resume} />
