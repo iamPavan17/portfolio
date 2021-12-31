@@ -1,5 +1,6 @@
 import React from "react";
 import { Flex, Text, Link } from "components/UI";
+import { textTheme } from "App/theme/text.theme";
 
 import ArrowRightIcon from "./assets/ArrowRight.svg";
 import { StyledImg, margin, onHoverStyle } from "./styles";
@@ -19,7 +20,7 @@ export default function NotFound() {
       </Text>
       <Link to="/" css={onHoverStyle}>
         <Flex alignItems="flex-start" gap="1.2rem">
-          <Text fontSize={1.8} fontWeight="bold">
+          <Text fontSize={textTheme.fontSize.h5} fontWeight="bold">
             Go Home
           </Text>
           <StyledImg src={ArrowRightIcon} alt="Arrow right" />
