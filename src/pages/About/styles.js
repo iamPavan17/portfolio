@@ -1,21 +1,18 @@
 import styled, { css } from "styled-components";
 
 const Section = styled.section`
-  height: 100vh;
   background: linear-gradient(90deg, #ece4db 32%, #fff 5%);
-  position: relative;
-
-  display: flex;
 `;
 
 const Container = styled.div`
   max-width: 1140px;
   margin: 0 auto;
-
-  display: flex;
+  display: grid;
+  grid-template-columns: 35fr 65fr;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  padding: 4.4rem;
 `;
 
 const UserImg = styled.img`
