@@ -14,9 +14,14 @@ const StyledLink = styled(LinkRouter)`
 /**
  * Link component
  */
-export function Link({ to, children, textDecoration, css }) {
+export function Link({ to, children, textDecoration, css, target }) {
   return (
-    <StyledLink to={to} textDecoration={textDecoration} css={css}>
+    <StyledLink
+      to={to}
+      textDecoration={textDecoration}
+      css={css}
+      target={target}
+    >
       {children}
     </StyledLink>
   );
@@ -24,6 +29,7 @@ export function Link({ to, children, textDecoration, css }) {
 
 Link.defaultProps = {
   textDecoration: "none",
+  target: "_self",
 };
 
 Link.propTypes = {
@@ -32,4 +38,5 @@ Link.propTypes = {
     .isRequired,
   textDecoration: PropTypes.oneOf(["underline", "none"]),
   css: PropTypes.array,
+  target: PropTypes.oneOf(["_self", "_blank"]),
 };
