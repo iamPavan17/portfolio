@@ -13,7 +13,7 @@ const onHoverStyle = css`
     transition: all 0.3s;
   }
   &:hover p {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 `;
 

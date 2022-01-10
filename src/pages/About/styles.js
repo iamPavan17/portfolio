@@ -12,7 +12,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding: 4.4rem;
+  padding: 6.2rem 4.4rem;
 `;
 
 const UserImg = styled.img`

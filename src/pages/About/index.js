@@ -25,7 +25,7 @@ export default function About() {
         <UserImg src={AboutImage} />
         <Content>
           <Text fontSize={6} fontWeight={"bold"}>
-            Hello I'm Gift Egwuenu.
+            Hello I'm Mathilde.
           </Text>
 
           <Text fontSize={textTheme.fontSize.h4} lineHeight={1.4}>
