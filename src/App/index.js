@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "components/Header";
+import Footer from "components/Footer";
 import About from "pages/About";
 import Resume from "pages/Resume";
 import Projects from "pages/Projects";
@@ -26,6 +27,7 @@ export default function App() {
 
           <Route component={NotFound} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </React.Fragment>
   );
