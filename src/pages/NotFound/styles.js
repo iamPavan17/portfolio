@@ -16,7 +16,7 @@ const onHoverStyle = css`
 
   &:hover {
     opacity: 0.7;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #7c606b;
   }
   &:hover img {
     transform: translateX(4px);

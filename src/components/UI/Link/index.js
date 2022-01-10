@@ -33,7 +33,7 @@ Link.defaultProps = {
 };
 
 Link.propTypes = {
-  to: PropTypes.string.isRequired,
+  to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
     .isRequired,
   textDecoration: PropTypes.oneOf(["underline", "none"]),
