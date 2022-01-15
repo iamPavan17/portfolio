@@ -8,6 +8,7 @@ export const Flex = styled.div`
     alignItems = "normal",
     gap,
     minHeight,
+    css,
   }) =>
     `
        flex-direction: ${flexDirection};
@@ -15,5 +16,7 @@ export const Flex = styled.div`
        align-items: ${alignItems};
        gap: ${gap};
        min-height: ${minHeight};
+
+       ${css}
     `}
 `;
