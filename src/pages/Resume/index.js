@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text, Flex, Card } from "components/UI";
+import { Text, Flex, Card, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
 import { offlineExpData, offlineEduData } from "./constants";
@@ -19,13 +19,15 @@ export default function Resume() {
           RESUME
         </Text>
 
-        <Flex justifyContent="space-between" css={paddingTB}>
+        <Flex
+          justifyContent="space-between"
+          alignItems="center"
+          css={paddingTB}
+        >
           <Text fontSize={textTheme.fontSize.h4} fontWeight={"bold"}>
             Experience
           </Text>
-          <Text fontSize={textTheme.fontSize.h5} fontWeight={"bold"}>
-            RESUME
-          </Text>
+          <Button>Download CV</Button>
         </Flex>
 
         <Flex flexDirection="column" gap="3.6rem">
