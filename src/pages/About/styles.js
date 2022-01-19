@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const Section = styled.section`
-  background: linear-gradient(90deg, #ece4db 32%, #fff 5%);
+  background: linear-gradient(90deg, #ece4db 100%, #fff 5%);
 `;
 
 const Container = styled.div`

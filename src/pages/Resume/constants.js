@@ -8,6 +8,8 @@ const offlineExpData = [
     body: "Company Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
+    descriptionTwo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ const offlineExpData = [
     body: "Company Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
+    descriptionTwo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
   {
     id: 2,
@@ -24,6 +28,8 @@ const offlineExpData = [
     body: "Company Name",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
+    descriptionTwo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
 ];
 
@@ -35,6 +41,8 @@ const offlineEduData = [
     body: "Degree",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
+    descriptionTwo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
   {
     id: 3,
@@ -43,6 +51,8 @@ const offlineEduData = [
     body: "Degree",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
+    descriptionTwo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
 ];
 

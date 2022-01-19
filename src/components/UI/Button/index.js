@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  border: 2px solid transparent;
   cursor: pointer;
   letter-spacing: 0.5px;
   outline: none;
@@ -13,13 +12,14 @@ export const Button = styled.button`
   ${({ theme }) => `
     font-family: ${theme.global.fontFamily};
     font-size: ${theme.text.fontSize.body};
-    color: #fff;
-    background-color: ${theme.text.color.secondary};
+    border: 2px solid ${theme.text.color.secondary};
+    background-color: ${theme.text.color.primary};
+    color: #000;
 
     &:hover {
-        color: #000;
-        background-color: ${theme.text.color.primary};
+        color: #fff;
         border: 2px solid ${theme.text.color.secondary};
+        background-color: ${theme.text.color.secondary};
     }
 
     &:disabled {
