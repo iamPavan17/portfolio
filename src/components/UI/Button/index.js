@@ -13,16 +13,14 @@ export const Button = styled.button`
     font-family: ${theme.global.fontFamily};
     font-size: ${theme.text.fontSize.body};
     border: 2px solid ${primary ? theme.text.color.secondary : "transparent"};
-    background-color: ${
-      primary ? theme.text.color.primary : theme.text.color.secondary
-    };
+    background-color: ${primary ? "transparent" : theme.text.color.secondary};
     color: ${primary ? "#000" : "#fff"};
 
     &:hover {
         color: ${primary ? "#fff" : "#000"};
         border: 2px solid ${theme.text.color.secondary};
         background-color: ${
-          primary ? theme.text.color.secondary : theme.text.color.primary
+          primary ? theme.text.color.secondary : "transparent"
         };
     }
 
