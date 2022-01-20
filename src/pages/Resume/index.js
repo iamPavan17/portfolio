@@ -27,7 +27,7 @@ export default function Resume() {
           <Text fontSize={textTheme.fontSize.h4} fontWeight={"bold"}>
             Experience
           </Text>
-          <Button>Download CV</Button>
+          <Button primary>Download CV</Button>
         </Flex>
 
         <Flex flexDirection="column" gap="3.6rem">

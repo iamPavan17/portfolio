@@ -9,17 +9,21 @@ export const Button = styled.button`
   font-weight: bold;
   transition: all 0.4s;
 
-  ${({ theme }) => `
+  ${({ theme, primary }) => `
     font-family: ${theme.global.fontFamily};
     font-size: ${theme.text.fontSize.body};
-    border: 2px solid ${theme.text.color.secondary};
-    background-color: ${theme.text.color.primary};
-    color: #000;
+    border: 2px solid ${primary ? theme.text.color.secondary : "transparent"};
+    background-color: ${
+      primary ? theme.text.color.primary : theme.text.color.secondary
+    };
+    color: ${primary ? "#000" : "#fff"};
 
     &:hover {
-        color: #fff;
+        color: ${primary ? "#fff" : "#000"};
         border: 2px solid ${theme.text.color.secondary};
-        background-color: ${theme.text.color.secondary};
+        background-color: ${
+          primary ? theme.text.color.secondary : theme.text.color.primary
+        };
     }
 
     &:disabled {
