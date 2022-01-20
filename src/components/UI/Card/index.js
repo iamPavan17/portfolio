@@ -12,12 +12,12 @@ export function Card({ data }) {
     <Container>
       <Flex flexDirection="column" gap="1rem">
         <Text fontSize={textTheme.fontSize.h5} fontWeight="bold">
-          {year}
-        </Text>
-        <Text fontSize={textTheme.fontSize.title} lineHeight={1.2}>
           {title}
         </Text>
-        <Text fontSize={textTheme.fontSize.caption}>{body}</Text>
+        <Text fontSize={textTheme.fontSize.title} lineHeight={1.2}>
+          {body}
+        </Text>
+        <Text fontSize={textTheme.fontSize.caption}>{year}</Text>
       </Flex>
       <Flex flexDirection="column" gap="2.4rem">
         <Text fontSize={textTheme.fontSize.title} lineHeight={1.6}>
