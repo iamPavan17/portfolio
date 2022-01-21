@@ -5,7 +5,7 @@ const StyledImg = styled.img`
   transition: all 0.4s;
 `;
 
-const margin = css`
+const spacing = css`
   margin: -1.8rem 0 3.6rem 0;
 `;
 
@@ -23,4 +23,4 @@ const onHoverStyle = css`
   }
 `;
 
-export { StyledImg, margin, onHoverStyle };
+export { StyledImg, spacing, onHoverStyle };

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Section = styled.section`
   background: #ece4db;
@@ -13,7 +13,11 @@ const Container = styled.div`
 const FormContainer = styled.div`
   background-color: #fff;
   margin-top: 50px;
-  padding: 2.4rem 2rem;
+  padding: 6.2rem 6.2rem;
 `;
 
-export { Section, Container, FormContainer };
+const spacing = css`
+  margin-bottom: 4.4rem;
+`;
+
+export { Section, Container, FormContainer, spacing };

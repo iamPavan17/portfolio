@@ -10,13 +10,13 @@ const Container = styled.div`
   padding: 7.4rem 1.4rem;
 `;
 
-const paddingTB = css`
+const spacing = css`
   padding-top: 7.4rem;
   padding-bottom: 4.4rem;
 `;
 
-const paddingB = css`
+const spacingB = css`
   padding-bottom: 1.8rem;
 `;
 
-export { Section, Container, paddingTB, paddingB };
+export { Section, Container, spacing, spacingB };

@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Text, Grid, Button } from "components/UI";
+import { Text, Grid, Button, Input } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
-import { Section, Container, FormContainer } from "./styles";
+import { Section, Container, FormContainer, spacing } from "./styles";
 
 export default function Contact() {
   return (
@@ -19,27 +19,22 @@ export default function Contact() {
 
         <FormContainer>
           <form>
-            <Grid cols={"1fr 1fr"} colGap={"6.2rem"}>
+            <Grid cols={"1fr 1fr"} colGap={"5.2rem"} css={spacing}>
               <div>
-                <label style={{ display: "block" }}>First Name</label>
-                <input type="text" style={{ width: "100%" }} />
+                <Input name={"name"} label="Name" />
               </div>
-
               <div>
-                <label style={{ display: "block" }}>First Name</label>
-                <input type="text" style={{ width: "100%" }} />
+                <Input name={"email"} label="Email" />
               </div>
             </Grid>
 
-            <Grid cols={"1fr"} rowGap={"2.4rem"}>
+            <Grid cols={"1fr"} rowGap={"2.4rem"} css={spacing}>
               <div>
-                <label style={{ display: "block" }}>First Name</label>
-                <input type="email" style={{ width: "100%" }} />
+                <Input name={"subject"} label="Subject" />
               </div>
 
               <div>
-                <label style={{ display: "block" }}>First Name</label>
-                <textarea rows="10" style={{ width: "100%" }} />
+                <Input name={"message"} label="Message" />
               </div>
             </Grid>
             <Button>Submit</Button>

@@ -4,7 +4,7 @@ import { textTheme } from "App/theme/text.theme";
 
 import { ABOUT_ROUTE } from "App/routes";
 import ArrowRightIcon from "./assets/ArrowRight.svg";
-import { StyledImg, margin, onHoverStyle } from "./styles";
+import { StyledImg, spacing, onHoverStyle } from "./styles";
 
 export default function NotFound() {
   return (
@@ -16,7 +16,7 @@ export default function NotFound() {
       gap="0.8rem"
     >
       <Text fontSize={18}>404</Text>
-      <Text fontSize={4.4} css={margin}>
+      <Text fontSize={4.4} css={spacing}>
         Page not found
       </Text>
       <Link to={ABOUT_ROUTE} css={onHoverStyle}>

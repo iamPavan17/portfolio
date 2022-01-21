@@ -4,7 +4,7 @@ import { Text, Flex, Card, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
 import { offlineExpData, offlineEduData } from "./constants";
-import { Section, Container, paddingTB, paddingB } from "./styles";
+import { Section, Container, spacing, spacingB } from "./styles";
 
 export default function Resume() {
   return (
@@ -14,16 +14,12 @@ export default function Resume() {
           fontSize={textTheme.fontSize.h2}
           textAlign="center"
           fontWeight={"bold"}
-          css={paddingB}
+          css={spacingB}
         >
           RESUME
         </Text>
 
-        <Flex
-          justifyContent="space-between"
-          alignItems="center"
-          css={paddingTB}
-        >
+        <Flex justifyContent="space-between" alignItems="center" css={spacing}>
           <Text fontSize={textTheme.fontSize.h4} fontWeight={"bold"}>
             Experience
           </Text>
@@ -32,11 +28,11 @@ export default function Resume() {
 
         <Flex flexDirection="column" gap="3.6rem">
           {offlineExpData.map((item) => (
-            <Card data={item} />
+            <Card data={item} key={item.id} />
           ))}
         </Flex>
 
-        <Flex justifyContent="space-between" css={paddingTB}>
+        <Flex justifyContent="space-between" css={spacing}>
           <Text fontSize={textTheme.fontSize.h4} fontWeight={"bold"}>
             Education
           </Text>
@@ -44,7 +40,7 @@ export default function Resume() {
 
         <Flex flexDirection="column" gap="3.6rem">
           {offlineEduData.map((item) => (
-            <Card data={item} />
+            <Card data={item} key={item.id} />
           ))}
         </Flex>
       </Container>

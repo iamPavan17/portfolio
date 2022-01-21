@@ -22,7 +22,7 @@ const offlineExpData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
   {
-    id: 2,
+    id: 3,
     year: "2016 - 2017",
     title: "JOB POSITION",
     body: "Company Name",
@@ -35,7 +35,7 @@ const offlineExpData = [
 
 const offlineEduData = [
   {
-    id: 3,
+    id: 1,
     year: "2014 - 2016",
     title: "UNIVERSITY NAME",
     body: "Degree",
@@ -45,7 +45,7 @@ const offlineEduData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
   },
   {
-    id: 3,
+    id: 2,
     year: "2012 - 2014",
     title: "UNIVERSITY NAME",
     body: "Degree",
