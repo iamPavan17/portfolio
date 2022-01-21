@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
 
+const Section = styled.section`
+  background: #ece4db;
+  height: 100vh;
+`;
+
 const StyledImg = styled.img`
   height: 1.8rem;
   transition: all 0.4s;
@@ -23,4 +28,4 @@ const onHoverStyle = css`
   }
 `;
 
-export { StyledImg, spacing, onHoverStyle };
+export { StyledImg, spacing, onHoverStyle, Section };
