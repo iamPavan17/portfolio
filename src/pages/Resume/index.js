@@ -26,7 +26,7 @@ export default function Resume() {
           <Button primary>Download CV</Button>
         </Flex>
 
-        <Flex flexDirection="column" gap="3.6rem">
+        <Flex flexDirection="column" gap="3rem">
           {offlineExpData.map((item) => (
             <Card data={item} key={item.id} />
           ))}
@@ -38,7 +38,7 @@ export default function Resume() {
           </Text>
         </Flex>
 
-        <Flex flexDirection="column" gap="3.6rem">
+        <Flex flexDirection="column" gap="3rem">
           {offlineEduData.map((item) => (
             <Card data={item} key={item.id} />
           ))}
