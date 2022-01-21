@@ -39,32 +39,20 @@ const StyledInput = styled.input`
 /**
  * themed Input component
  */
-export function Input({ name, label, error, size, ...rest }) {
+export function Input({ name, label, error, ...rest }) {
   return (
     <>
       <StyledLabel htmlFor={name}>{label}</StyledLabel>
-      <StyledInput
-        id={name}
-        error={error}
-        size={size}
-        autoComplete="off"
-        {...rest}
-      />
+      <StyledInput id={name} error={error} {...rest} />
     </>
   );
 }
 Input.propTypes = {
-  /**
-   * apply error style when it's true
-   */
   error: PropTypes.bool,
-  /**
-   * mainly affects font-size, but seems like we only utilize one size for now
-   */
-  size: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 Input.defaultProps = {
   error: false,
-  size: "normal",
 };
