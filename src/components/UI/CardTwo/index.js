@@ -18,7 +18,7 @@ export function CardTwo({ data }) {
         </Text>
         <Text
           fontSize={textTheme.fontSize.title}
-          lineHeight={1.2}
+          lineHeight={1.4}
           color={"caption"}
         >
           {body}

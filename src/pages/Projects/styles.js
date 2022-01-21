@@ -12,8 +12,7 @@ const Container = styled.div`
 
 const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2.4rem;
+  grid-template-columns: 1fr;
   row-gap: 3.6rem;
   margin-top: 50px;
 `;

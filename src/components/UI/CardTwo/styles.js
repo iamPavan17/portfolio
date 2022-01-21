@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  padding: 3rem 2.4rem 0.1rem 2.4rem;
+  padding: 3rem 2.4rem 0.1rem 3rem;
   background-color: #fff;
   cursor: pointer;
 
@@ -33,6 +33,7 @@ const Container = styled.div`
   p {
     &:nth-child(3) {
       margin-top: 0.8rem;
+      max-width: 90%;
     }
   }
 `;

@@ -28,7 +28,7 @@ export default function Contact() {
               </div>
             </Grid>
 
-            <Grid cols={"1fr"} rowGap={"2.4rem"} css={spacing}>
+            <Grid cols={"1fr"} rowGap={"4.4rem"} css={spacing}>
               <div>
                 <Input name={"subject"} label="Subject" />
               </div>
