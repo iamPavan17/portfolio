@@ -1,62 +1,22 @@
 import styled, { css } from "styled-components";
 
 const Section = styled.section`
-  background: linear-gradient(90deg, #ece4db 100%, #fff 5%);
+  background: #ece4db;
 `;
 
 const Container = styled.div`
-  max-width: 1140px;
+  max-width: 800px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 35fr 65fr;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  padding: 6.2rem 4.4rem;
+  padding: 7.4rem 1.4rem;
 `;
 
-const UserImg = styled.img`
-  display: inline-block;
-  width: 350px;
-  height: 520px;
-  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  filter: brightness(110%);
+const spacing = css`
+  padding-top: 7.4rem;
+  padding-bottom: 4.4rem;
 `;
 
-const Content = styled.div`
-  p {
-    &:first-child {
-      margin-bottom: 3rem;
-    }
-  }
+const spacingB = css`
+  padding-bottom: 1.8rem;
 `;
 
-const IconsWrapper = styled.div`
-  display: flex;
-  gap: 2.4rem;
-  margin-top: 2.4rem;
-`;
-
-const IconImg = styled.img`
-  transform: translateY(0px);
-  transition: all 0.3s;
-`;
-
-const onHoverStyle = css`
-  &:hover {
-    opacity: 0.7;
-  }
-  &:hover img {
-    transform: translateY(-3px);
-  }
-`;
-
-export {
-  Section,
-  Container,
-  Content,
-  UserImg,
-  IconsWrapper,
-  IconImg,
-  onHoverStyle,
-};
+export { Section, Container, spacing, spacingB };

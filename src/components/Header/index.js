@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Text, Link } from "components/UI";
 
 import {
+  HOME_ROUTE,
   ABOUT_ROUTE,
-  RESUME_ROUTE,
   PROJECTS_ROUTE,
   CONTACT_ROUTE,
 } from "App/routes";
@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <StyledHeader>
-      <Link to={ABOUT_ROUTE}>
+      <Link to={HOME_ROUTE}>
         <Text fontSize={textTheme.fontSize.h3} fontWeight={"bold"}>
           PORTFOLIO .
         </Text>
@@ -31,12 +31,6 @@ export default function Header() {
           <Link className={active ? "active" : ""} to={ABOUT_ROUTE}>
             <li>
               <Text fontSize={textTheme.fontSize.title}>About</Text>
-            </li>
-          </Link>
-
-          <Link className={active ? "active" : ""} to={RESUME_ROUTE}>
-            <li>
-              <Text fontSize={textTheme.fontSize.title}>Resume</Text>
             </li>
           </Link>
 
