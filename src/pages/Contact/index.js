@@ -18,7 +18,7 @@ export default function Contact() {
         </Text>
 
         <FormContainer>
-          <form>
+          <form autoComplete="off">
             <Grid cols={"1fr 1fr"} colGap={"5.2rem"} css={spacing}>
               <div>
                 <Input name={"name"} label="Name" />

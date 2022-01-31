@@ -14,13 +14,14 @@ const StyledLink = styled(LinkRouter)`
 /**
  * Link component
  */
-export function Link({ to, children, textDecoration, css, target }) {
+export function Link({ to, children, textDecoration, css, target, ...rest }) {
   return (
     <StyledLink
       to={to}
       textDecoration={textDecoration}
       css={css}
       target={target}
+      {...rest}
     >
       {children}
     </StyledLink>

@@ -12,17 +12,66 @@ const StyledHeader = styled.header`
 const StyledList = styled.ul`
   display: flex;
   flex-direction: row;
-  gap: 2.4rem;
+  align-items: center;
+  gap: 3.6rem;
   font-size: 2rem;
   list-style: none;
-`;
 
-const onHoverStyle = css`
-  transition: all 0.3s;
+  a {
+    transition: all 0.2s;
+    transform: translateX(50px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 
-  &:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .active {
+    transform: translateX(-10px);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
   }
 `;
 
-export { StyledHeader, StyledList, onHoverStyle };
+const MenuIconWrapper = styled.div`
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: all 0.2s;
+
+  .active-line-one {
+    transform: rotate(45deg);
+    margin-top: 14px;
+  }
+
+  .active-line-two {
+    width: 100%;
+    transform: rotate(-45deg);
+    margin-bottom: 14px;
+  }
+`;
+
+const LineOne = styled.div`
+  transition: all 0.2s;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+`;
+
+const LineTwo = styled.div`
+  transition: all 0.2s;
+  margin-bottom: 3px;
+  width: 75%;
+  height: 2px;
+  background-color: #000;
+  align-self: flex-end;
+`;
+
+export { StyledHeader, StyledList, MenuIconWrapper, LineOne, LineTwo };

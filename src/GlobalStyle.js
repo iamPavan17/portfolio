@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     /* 10px / 16px = 0.625 = 62.5% */
     /* Percentage of user's browser font-size setting */
     font-size: 62.5%;
+    overflow-x: hidden;
   }
 
   /**
