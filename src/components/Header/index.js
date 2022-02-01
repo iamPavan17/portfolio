@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, Link } from "components/UI";
+import { Text, Link, Flex } from "components/UI";
 
 import {
   HOME_ROUTE,
@@ -19,6 +19,12 @@ import {
 export default function Header() {
   let [active, setActive] = useState(false);
 
+  const menuItems = [
+    { id: 1, url: ABOUT_ROUTE, text: "About" },
+    { id: 2, url: PROJECTS_ROUTE, text: "Projects" },
+    { id: 3, url: CONTACT_ROUTE, text: "Contact" },
+  ];
+
   return (
     <StyledHeader>
       <Link to={HOME_ROUTE}>
@@ -26,31 +32,25 @@ export default function Header() {
           PORTFOLIO .
         </Text>
       </Link>
-      <nav>
+      <Flex>
         <StyledList>
-          <Link className={active ? "active" : ""} to={ABOUT_ROUTE}>
-            <li>
-              <Text fontSize={textTheme.fontSize.title}>About</Text>
-            </li>
-          </Link>
-
-          <Link className={active ? "active" : ""} to={PROJECTS_ROUTE}>
-            <li>
-              <Text fontSize={textTheme.fontSize.title}>Projects</Text>
-            </li>
-          </Link>
-
-          <Link className={active ? "active" : ""} to={CONTACT_ROUTE}>
-            <li>
-              <Text fontSize={textTheme.fontSize.title}>Contact</Text>
-            </li>
-          </Link>
-          <MenuIconWrapper onClick={() => setActive(!active)}>
-            <LineOne className={active ? "active-line-one" : ""}></LineOne>
-            <LineTwo className={active ? "active-line-two" : ""}></LineTwo>
-          </MenuIconWrapper>
+          {menuItems.map((menuItem) => (
+            <Link
+              className={active ? "desktop active" : "desktop"}
+              to={menuItem.url}
+            >
+              <li>
+                <Text fontSize={textTheme.fontSize.title}>{menuItem.text}</Text>
+              </li>
+            </Link>
+          ))}
         </StyledList>
-      </nav>
+
+        <MenuIconWrapper onClick={() => setActive(!active)}>
+          <LineOne className={active ? "active-line-one" : ""}></LineOne>
+          <LineTwo className={active ? "active-line-two" : ""}></LineTwo>
+        </MenuIconWrapper>
+      </Flex>
     </StyledHeader>
   );
 }

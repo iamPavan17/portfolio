@@ -16,6 +16,7 @@ const StyledList = styled.ul`
   gap: 3.6rem;
   font-size: 2rem;
   list-style: none;
+  margin-right: 3.6rem;
 
   a {
     transition: all 0.2s;
@@ -35,6 +36,12 @@ const StyledList = styled.ul`
     pointer-events: auto;
     visibility: visible;
   }
+
+  // @media (max-width: 800px) {
+  //   .desktop {
+  //     display: none;
+  //   }
+  // }
 `;
 
 const MenuIconWrapper = styled.div`
