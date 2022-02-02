@@ -97,7 +97,7 @@ const MobileNav = styled.div`
   width: 100%;
   height: 250px;
   background: white;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid ${(props) => props.theme.text.color.primary};
 
   display: flex;
   flex-direction: column;
