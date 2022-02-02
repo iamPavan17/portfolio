@@ -7,6 +7,13 @@ const StyledHeader = styled.header`
   padding: 0 4.8rem;
   height: 8.6rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+  .mobile-nav-active {
+    transform: translateY(0px);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
 `;
 
 const StyledList = styled.ul`
@@ -37,11 +44,9 @@ const StyledList = styled.ul`
     visibility: visible;
   }
 
-  // @media (max-width: 800px) {
-  //   .desktop {
-  //     display: none;
-  //   }
-  // }
+  @media (max-width: 800px) {
+    display: none;
+  }
 `;
 
 const MenuIconWrapper = styled.div`
@@ -81,4 +86,47 @@ const LineTwo = styled.div`
   align-self: flex-end;
 `;
 
-export { StyledHeader, StyledList, MenuIconWrapper, LineOne, LineTwo };
+const MobileNav = styled.div`
+  @media (min-width: 800px) {
+    display: none;
+  }
+
+  position: absolute;
+  top: 8.6rem;
+  right: 0;
+  width: 100%;
+  height: 250px;
+  background: white;
+  border-top: 1px solid #ccc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.6rem;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  transition: all 0.2s;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+`;
+
+export {
+  StyledHeader,
+  StyledList,
+  MenuIconWrapper,
+  LineOne,
+  LineTwo,
+  MobileNav,
+};

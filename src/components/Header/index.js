@@ -14,6 +14,7 @@ import {
   MenuIconWrapper,
   LineOne,
   LineTwo,
+  MobileNav,
 } from "./styles";
 
 export default function Header() {
@@ -38,6 +39,7 @@ export default function Header() {
             <Link
               className={active ? "desktop active" : "desktop"}
               to={menuItem.url}
+              key={menuItem.id}
             >
               <li>
                 <Text fontSize={textTheme.fontSize.title}>{menuItem.text}</Text>
@@ -51,6 +53,20 @@ export default function Header() {
           <LineTwo className={active ? "active-line-two" : ""}></LineTwo>
         </MenuIconWrapper>
       </Flex>
+
+      <MobileNav className={active ? "mobile-nav-active" : ""}>
+        {menuItems.map((menuItem) => (
+          <Link
+            // className={active ? "desktop active" : "desktop"}
+            to={menuItem.url}
+            key={menuItem.id}
+          >
+            <li>
+              <Text fontSize={textTheme.fontSize.title}>{menuItem.text}</Text>
+            </li>
+          </Link>
+        ))}
+      </MobileNav>
     </StyledHeader>
   );
 }
