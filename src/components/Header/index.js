@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 import { Text, Link, Flex } from "components/UI";
 
 import {
@@ -18,7 +20,12 @@ import {
 } from "./styles";
 
 export default function Header() {
+  let location = useLocation();
   let [active, setActive] = useState(false);
+
+  useEffect(() => {
+    setActive(false);
+  }, [location]);
 
   const menuItems = [
     { id: 1, url: ABOUT_ROUTE, text: "About" },

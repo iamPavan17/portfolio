@@ -7,6 +7,7 @@ const Section = styled.section`
 const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  // padding: 1.4rem;
 `;
 
 const UserImg = styled.img`
