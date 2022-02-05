@@ -1,69 +1,48 @@
 import React from "react";
 
-import { Text, Link } from "components/UI";
+import { Text, Link, Flex, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
+import { PROJECTS_ROUTE, CONTACT_ROUTE } from "App/routes";
 
-import AboutImage from "./assets/about.jpg";
-import TwitterIcon from "./assets/twitter.svg";
-import LinkedinIcon from "./assets/linkedin.svg";
-import DribbleIcon from "./assets/dribbble.svg";
-import InstaIcon from "./assets/instagram.svg";
-import {
-  Section,
-  Container,
-  Content,
-  UserImg,
-  IconsWrapper,
-  IconImg,
-  onHoverStyle,
-} from "./styles";
+import AboutImage from "./assets/about.jpeg";
+import { Section, Container, UserImg } from "./styles";
 
 export default function About() {
   return (
     <Section>
       <Container>
-        <UserImg src={AboutImage} />
-        <Content>
-          <Text fontSize={6} fontWeight={"bold"}>
-            Hello I'm Mathilde.
-          </Text>
+        <Flex
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          minHeight="90vh"
+        >
+          <UserImg src={AboutImage} />
 
-          <Text fontSize={textTheme.fontSize.h4} lineHeight={1.4}>
-            I’m a frontend developer and content creator <br />
-            based in the Netherlands.
-          </Text>
+          <Flex flexDirection="column" alignItems="center" gap="2.4rem">
+            <Text fontSize={6} fontWeight={"bold"} textAlign="center">
+              Hello, I'm Mathilde, and I am a product designer.
+            </Text>
 
-          <IconsWrapper>
-            <Link
-              to={{ pathname: "https://twitter.com" }}
-              css={onHoverStyle}
-              target={"_blank"}
+            <Text
+              fontSize={textTheme.fontSize.h4}
+              lineHeight={1.4}
+              textAlign="center"
             >
-              <IconImg src={TwitterIcon} alt="social icon" />
-            </Link>
-            <Link
-              to={{ pathname: "https://www.linkedin.com" }}
-              css={onHoverStyle}
-              target={"_blank"}
-            >
-              <IconImg src={LinkedinIcon} alt="social icon" />
-            </Link>
-            <Link
-              to={{ pathname: "https://dribbble.com" }}
-              css={onHoverStyle}
-              target={"_blank"}
-            >
-              <IconImg src={DribbleIcon} alt="social icon" />
-            </Link>
-            <Link
-              to={{ pathname: "https://instagram.com" }}
-              css={onHoverStyle}
-              target={"_blank"}
-            >
-              <IconImg src={InstaIcon} alt="social icon" />
-            </Link>
-          </IconsWrapper>
-        </Content>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit dapibus
+              porta lorem morbi hendrerit. Maecenas et, at quis purus.
+            </Text>
+
+            <Flex gap="1.8rem">
+              <Link to={PROJECTS_ROUTE}>
+                <Button primary>See my work</Button>
+              </Link>
+              <Link to={CONTACT_ROUTE}>
+                <Button primary>Contact me</Button>
+              </Link>
+            </Flex>
+          </Flex>
+        </Flex>
       </Container>
     </Section>
   );

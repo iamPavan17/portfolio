@@ -91,6 +91,7 @@ const MobileNav = styled.div`
     display: none;
   }
 
+  z-index: 999;
   position: absolute;
   top: 8.6rem;
   right: 0;
