@@ -17,6 +17,11 @@ export default function Contact() {
           Get in Touch
         </Text>
 
+        <Text fontSize={textTheme.fontSize.h5}>
+          Fill the form or just send me an email on &nbsp;
+          <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+        </Text>
+
         <FormContainer>
           <form autoComplete="off">
             <Grid cols={"1fr 1fr"} colGap={"5.2rem"} css={spacing}>
