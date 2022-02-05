@@ -4,7 +4,7 @@ import { Text, Link, Flex, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 import { PROJECTS_ROUTE, CONTACT_ROUTE } from "App/routes";
 
-import AboutImage from "./assets/about.jpeg";
+import AboutImage from "./assets/about.jpg";
 import { Section, Container, UserImg } from "./styles";
 
 export default function About() {

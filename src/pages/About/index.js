@@ -16,7 +16,7 @@ export default function About() {
           fontWeight={"bold"}
           css={spacingB}
         >
-          ABOUT
+          About
         </Text>
 
         <Flex justifyContent="space-between" alignItems="center" css={spacing}>

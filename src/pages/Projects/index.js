@@ -15,7 +15,7 @@ export default function Projects() {
           // textAlign="center"
           fontWeight={"bold"}
         >
-          MY PROJECTS
+          My Projects
         </Text>
 
         <ProjectContainer>

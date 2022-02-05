@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 const Section = styled.section`
   background: #ece4db;
-  height: 100vh;
+  height: 90vh;
 `;
 
 const StyledImg = styled.img`
@@ -10,13 +10,10 @@ const StyledImg = styled.img`
   transition: all 0.4s;
 `;
 
-const spacing = css`
-  margin: -1.8rem 0 3.6rem 0;
-`;
-
 const onHoverStyle = css`
   border-bottom: 2px solid transparent;
-  padding-bottom: 1rem;
+
+  padding: 1.4rem 0;
   transition: all 0.4s;
 
   &:hover {
@@ -28,4 +25,4 @@ const onHoverStyle = css`
   }
 `;
 
-export { StyledImg, spacing, onHoverStyle, Section };
+export { StyledImg, onHoverStyle, Section };
