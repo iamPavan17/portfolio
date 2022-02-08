@@ -1,5 +1,9 @@
+import { forwardRef } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+
+import { Text } from "components/UI";
+import { textTheme } from "App/theme/text.theme";
 
 const StyledLabel = styled.label`
   display: block;
@@ -39,17 +43,28 @@ const StyledInput = styled.input`
 /**
  * themed Input component
  */
-export function Input({ name, label, error, ...rest }) {
-  return (
+export const Input = forwardRef(
+  ({ id, label, error, errorMessage, ...rest }, ref) => (
     <>
-      <StyledLabel htmlFor={name}>{label}</StyledLabel>
-      <StyledInput id={name} error={error} {...rest} />
+      <StyledLabel htmlFor={id}>{label}</StyledLabel>
+      <StyledInput id={id} error={error} {...rest} ref={ref} />
+
+      {error && (
+        <Text
+          fontSize={textTheme.fontSize.caption}
+          fontWeight={"bold"}
+          color={"error"}
+        >
+          {errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1)}
+        </Text>
+      )}
     </>
-  );
-}
+  )
+);
+
 Input.propTypes = {
   error: PropTypes.bool,
-  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
 

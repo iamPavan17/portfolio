@@ -19,8 +19,16 @@ const FormContainer = styled.div`
   padding: 8rem 7.4rem;
 `;
 
+const InputWrapper = styled.div`
+  position: relative;
+  p {
+    margin-top: 1rem;
+    position: absolute;
+  }
+`;
+
 const spacing = css`
   margin-bottom: 4.4rem;
 `;
 
-export { Section, Container, FormContainer, spacing };
+export { Section, Container, FormContainer, spacing, InputWrapper };
