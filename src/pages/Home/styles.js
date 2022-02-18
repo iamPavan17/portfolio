@@ -8,6 +8,14 @@ const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   // padding: 1.4rem;
+
+  @media (max-width: 850px) {
+    padding: 0 3.6rem;
+  }
+
+  @media (max-width: 650px) {
+    padding: 3.6rem 2rem;
+  }
 `;
 
 const UserImg = styled.img`

@@ -8,6 +8,10 @@ const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
   padding: 7.4rem 1.4rem;
+
+  @media (max-width: 800px) {
+    padding: 7.4rem 3rem;
+  }
 `;
 
 const ProjectContainer = styled.div`

@@ -11,6 +11,10 @@ const Container = styled.div`
   flex-direction: column;
   gap: 1.8rem;
   padding: 7.4rem 1.4rem;
+
+  @media (max-width: 800px) {
+    padding: 7.4rem 3rem;
+  }
 `;
 
 const FormContainer = styled.div`
