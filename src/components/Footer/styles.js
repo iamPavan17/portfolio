@@ -1,7 +1,21 @@
 import styled, { css } from "styled-components";
+import { Flex } from "components/UI";
 
 const StyledFooter = styled.footer`
   padding: 3.6rem 4.4rem;
+`;
+
+const StyledFlex = styled(Flex)`
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 2rem;
+
+    div {
+      &:nth-child(2) {
+        order: -1;
+      }
+    }
+  }
 `;
 
 const Img = styled.img`
@@ -17,4 +31,4 @@ const onHoverStyle = css`
   }
 `;
 
-export { StyledFooter, Img, onHoverStyle };
+export { StyledFooter, Img, onHoverStyle, StyledFlex };

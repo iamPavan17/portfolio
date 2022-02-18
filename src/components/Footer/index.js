@@ -3,12 +3,12 @@ import { Flex, Text, Link } from "components/UI";
 
 import { textTheme } from "App/theme/text.theme";
 import HeartIcon from "./assets/heart.svg";
-import { StyledFooter, Img, onHoverStyle } from "./styles";
+import { StyledFooter, Img, onHoverStyle, StyledFlex } from "./styles";
 
 export default function Footer() {
   return (
     <StyledFooter>
-      <Flex alignItems="center" justifyContent="space-between">
+      <StyledFlex alignItems="center" justifyContent="space-between">
         <Flex justifyContent="center" alignItems="center" gap="0.6rem">
           <Text fontSize={textTheme.fontSize.title}>
             &copy; {`${new Date().getFullYear()}`} Designed and Developed with
@@ -53,7 +53,7 @@ export default function Footer() {
             <Text fontSize={textTheme.fontSize.title}>FB</Text>
           </Link>
         </Flex>
-      </Flex>
+      </StyledFlex>
     </StyledFooter>
   );
 }
