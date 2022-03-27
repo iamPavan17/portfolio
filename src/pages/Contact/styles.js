@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Grid } from "components/UI";
 
 const Section = styled.section`
   background: #ece4db;
@@ -35,4 +36,11 @@ const spacing = css`
   margin-bottom: 4.4rem;
 `;
 
-export { Section, Container, FormContainer, spacing, InputWrapper };
+const StyledGrid = styled(Grid)`
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr !important;
+    row-gap: 4.2rem !important;
+  }
+`;
+
+export { Section, Container, FormContainer, spacing, InputWrapper, StyledGrid };

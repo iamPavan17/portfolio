@@ -11,7 +11,11 @@ export function Card({ data }) {
   return (
     <Container>
       <Flex flexDirection="column" gap="1rem">
-        <Text fontSize={textTheme.fontSize.h5} fontWeight="bold">
+        <Text
+          fontSize={textTheme.fontSize.h5}
+          fontWeight="bold"
+          lineHeight={1.2}
+        >
           {title}
         </Text>
         <Text fontSize={textTheme.fontSize.title} lineHeight={1.2}>

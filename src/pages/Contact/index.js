@@ -13,6 +13,7 @@ import {
   FormContainer,
   spacing,
   InputWrapper,
+  StyledGrid,
 } from "./styles";
 
 export default function Contact() {
@@ -39,7 +40,7 @@ export default function Contact() {
 
         <FormContainer>
           <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
-            <Grid cols={"1fr 1fr"} colGap={"5.2rem"} css={spacing}>
+            <StyledGrid cols={"1fr 1fr"} colGap={"5.2rem"} css={spacing}>
               <InputWrapper>
                 <Input
                   id={"name"}
@@ -58,7 +59,7 @@ export default function Contact() {
                   errorMessage={errors.email?.message}
                 />
               </InputWrapper>
-            </Grid>
+            </StyledGrid>
 
             <Grid cols={"1fr"} rowGap={"4.4rem"} css={spacing}>
               <InputWrapper>

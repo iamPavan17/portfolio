@@ -69,7 +69,9 @@ export default function Header() {
             key={menuItem.id}
           >
             <li>
-              <Text fontSize={textTheme.fontSize.title}>{menuItem.text}</Text>
+              <Text className="list-text" fontSize={textTheme.fontSize.title}>
+                {menuItem.text}
+              </Text>
             </li>
           </Link>
         ))}

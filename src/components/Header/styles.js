@@ -121,6 +121,10 @@ const MobileNav = styled.div`
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+
+  .list-text {
+    font-size: 1.6rem !important;
+  }
 `;
 
 export {

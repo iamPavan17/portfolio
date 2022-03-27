@@ -5,7 +5,10 @@ const Container = styled.div`
   background: #fff;
   display: grid;
   grid-template-columns: 35fr 65fr;
-  //   gap: 4.4rem;
+
+  @media (max-width: 500px) {
+    gap: 2.4rem !important;
+  }
 `;
 
 export { Container };
