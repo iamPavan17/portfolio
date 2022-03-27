@@ -34,12 +34,6 @@ const GlobalStyle = createGlobalStyle`
       font-size: 50%;
     }
   }
-
-  @media (max-width: 500px) {
-    html, body {
-      font-size: 37.5%;
-    }
-  }
 `;
 
 export default GlobalStyle;

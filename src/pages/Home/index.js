@@ -20,7 +20,12 @@ export default function About() {
           <UserImg src={AboutImage} />
 
           <Flex flexDirection="column" alignItems="center" gap="2.4rem">
-            <Text fontSize={6} fontWeight={"bold"} textAlign="center">
+            <Text
+              className="title"
+              fontSize={6}
+              fontWeight={"bold"}
+              textAlign="center"
+            >
               Hello, I'm Mathilde, and I am a product designer.
             </Text>
 

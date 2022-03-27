@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Flex } from "components/UI";
 
 const Section = styled.section`
   background: linear-gradient(90deg, #ece4db 100%, #fff 5%);
@@ -15,6 +16,12 @@ const Container = styled.div`
 
   @media (max-width: 650px) {
     padding: 3.6rem 2rem;
+  }
+
+  @media (max-width: 500px) {
+    .title {
+      font-size: 5.2rem !important;
+    }
   }
 `;
 

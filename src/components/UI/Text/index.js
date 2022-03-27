@@ -46,6 +46,7 @@ export function Text({
   letterSpacing,
   lineHeight,
   css,
+  ...rest
 }) {
   return (
     <StyledText
@@ -58,6 +59,7 @@ export function Text({
       lineHeight={lineHeight}
       letterSpacing={letterSpacing}
       css={css}
+      {...rest}
     >
       {children || "-"}
     </StyledText>
