@@ -29,11 +29,17 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-  // @media (max-width: 500px) {
-  //   html, body {
-  //     font-size: 12.5%;
-  //   }
-  // }
+  @media (max-width: 750px) {
+    html, body {
+      font-size: 50%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    html, body {
+      font-size: 37.5%;
+    }
+  }
 `;
 
 export default GlobalStyle;
