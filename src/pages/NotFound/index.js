@@ -1,4 +1,6 @@
 import React from "react";
+
+import Helmet from "components/Helmet";
 import { Flex, Text, Link } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
@@ -9,6 +11,8 @@ import { Section, StyledImg, onHoverStyle } from "./styles";
 export default function NotFound() {
   return (
     <Section>
+      <Helmet title="Not Found" />
+
       <Flex
         flexDirection="column"
         justifyContent="center"

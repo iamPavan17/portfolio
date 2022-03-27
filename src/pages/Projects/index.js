@@ -1,5 +1,6 @@
 import React from "react";
 
+import Helmet from "components/Helmet";
 import { Text, CardTwo } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
@@ -9,6 +10,8 @@ import { offlineProjectData } from "./constants";
 export default function Projects() {
   return (
     <Section>
+      <Helmet title="Projects" />
+
       <Container>
         <Text
           fontSize={textTheme.fontSize.h2}

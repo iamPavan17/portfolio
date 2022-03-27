@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
+import Helmet from "components/Helmet";
 import { Text, Grid, Button, Input } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 import { isError } from "utils";
@@ -28,6 +29,7 @@ export default function Contact() {
   const onSubmit = (data) => console.log(data);
   return (
     <Section>
+      <Helmet title="Contact" />
       <Container>
         <Text fontSize={textTheme.fontSize.h2} fontWeight={"bold"}>
           Get in Touch

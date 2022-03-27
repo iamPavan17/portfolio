@@ -1,5 +1,6 @@
 import React from "react";
 
+import Helmet from "components/Helmet";
 import { Text, Link, Flex, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 import { PROJECTS_ROUTE, CONTACT_ROUTE } from "App/routes";
@@ -10,6 +11,7 @@ import { Section, Container, UserImg } from "./styles";
 export default function About() {
   return (
     <Section>
+      <Helmet title="Home" />
       <Container>
         <Flex
           flexDirection="column"

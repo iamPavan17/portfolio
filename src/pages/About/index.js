@@ -1,5 +1,6 @@
 import React from "react";
 
+import Helmet from "components/Helmet";
 import { Text, Flex, Card, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
@@ -9,6 +10,7 @@ import { Section, Container, spacing, spacingB } from "./styles";
 export default function About() {
   return (
     <Section>
+      <Helmet title="About" />
       <Container>
         <Text
           fontSize={textTheme.fontSize.h2}
