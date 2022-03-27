@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Flex } from "components/UI";
 
 const Section = styled.section`
   background: linear-gradient(90deg, #ece4db 100%, #fff 5%);
