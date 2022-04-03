@@ -123,7 +123,7 @@ const MobileNav = styled.div`
   visibility: hidden;
 
   .list-text {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
 `;
 
