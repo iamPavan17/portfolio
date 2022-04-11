@@ -26,7 +26,7 @@ const Container = styled.div`
 
 const UserImg = styled.img`
   display: inline-block;
-  width: 180px;
+  width: 170px;
   border-radius: 50%;
   filter: brightness(110%);
   margin-bottom: 4.4rem;

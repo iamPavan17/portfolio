@@ -4,8 +4,8 @@ import Helmet from "components/Helmet";
 import { Text, Link, Flex, Button } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 import { PROJECTS_ROUTE, CONTACT_ROUTE } from "App/routes";
+import AboutImage from "./assets/profile3.png";
 
-import AboutImage from "./assets/about.jpg";
 import { Section, Container, UserImg } from "./styles";
 
 export default function About() {
@@ -20,7 +20,6 @@ export default function About() {
           minHeight="90vh"
         >
           <UserImg src={AboutImage} />
-
           <Flex flexDirection="column" alignItems="center" gap="2.4rem">
             <Text
               className="title"
