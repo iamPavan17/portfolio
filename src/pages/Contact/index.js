@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -18,7 +17,6 @@ import {
 } from "./styles";
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
   const {
     register,
     handleSubmit,
@@ -31,7 +29,7 @@ export default function Contact() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeUri({ "form-name": "contact", ...data, name2: name }),
+      body: encodeUri({ "form-name": "contact", ...data }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -49,29 +47,6 @@ export default function Contact() {
           Fill the form or just send me an email on &nbsp;
           <a href="mailto:iampavan05@gmail.com">iampavan05@gmail.com</a>
         </Text>
-
-        {/* A little help for the Netlify post-processing bots */}
-        <form
-          name="contact"
-          netlify="true"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          hidden
-        >
-          <input name="name" />
-          <input type="text" name="name2" />
-          <input name="email" />
-          <input name="subject" />
-          <input name="message" />
-        </form>
-
-        <form>
-          <input
-            type="text"
-            name="name2"
-            onChange={(e) => setName(e.target.value)}
-          />
-        </form>
 
         <FormContainer>
           <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
