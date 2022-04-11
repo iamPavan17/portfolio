@@ -3,6 +3,12 @@ import { Grid } from "components/UI";
 
 const Section = styled.section`
   background: #ece4db;
+
+  div {
+    &:first-child {
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 const Container = styled.div`

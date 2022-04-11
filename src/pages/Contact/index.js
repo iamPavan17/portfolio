@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import toast, { Toaster } from "react-hot-toast";
 
 import Helmet from "components/Helmet";
 import { Text, Grid, Button, Input } from "components/UI";
@@ -31,20 +32,28 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encodeUri({ "form-name": "contact", ...data }),
     })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+      .then(({ status }) => {
+        if (status !== 200) {
+          toast.error("Something went wrong!");
+          return;
+        }
+        toast.success("Thanks, Will contact you soon...");
+      })
+      .catch(() => toast.error("Something went wrong!"));
   };
 
   return (
     <Section>
       <Helmet title="Contact" />
+      <Toaster position="bottom-center" />
+
       <Container>
         <Text fontSize={textTheme.fontSize.h2} fontWeight={"bold"}>
           Get in Touch
         </Text>
 
         <Text fontSize={textTheme.fontSize.h5}>
-          Fill the form or just send me an email on &nbsp;
+          Fill the form or just send me an email to &nbsp;
           <a href="mailto:iampavan05@gmail.com">iampavan05@gmail.com</a>
         </Text>
 
