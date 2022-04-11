@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import Helmet from "components/Helmet";
 import { Text, Grid, Button, Input } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
-import { isError } from "utils";
+import { isError, encodeUri } from "utils";
 
 import { schema } from "./schema";
 import {
@@ -26,7 +26,16 @@ export default function Contact() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encodeUri({ "form-name": "contact", ...data }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <Section>
       <Helmet title="Contact" />
@@ -37,8 +46,16 @@ export default function Contact() {
 
         <Text fontSize={textTheme.fontSize.h5}>
           Fill the form or just send me an email on &nbsp;
-          <a href="mailto:info@yoursite.com">iampavan05@gmail.com</a>
+          <a href="mailto:iampavan05@gmail.com">iampavan05@gmail.com</a>
         </Text>
+
+        {/* A little help for the Netlify post-processing bots */}
+        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="text" name="email" />
+          <input type="text" name="subject" />
+          <input type="text" name="message" />
+        </form>
 
         <FormContainer>
           <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
