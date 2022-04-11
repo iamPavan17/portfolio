@@ -18,10 +18,6 @@ const StyledFlex = styled(Flex)`
   }
 `;
 
-const Img = styled.img`
-  height: 17px;
-`;
-
 const onHoverStyle = css`
   p {
     transition: all 0.3s;
@@ -31,4 +27,4 @@ const onHoverStyle = css`
   }
 `;
 
-export { StyledFooter, Img, onHoverStyle, StyledFlex };
+export { StyledFooter, onHoverStyle, StyledFlex };

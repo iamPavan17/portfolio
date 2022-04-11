@@ -17,6 +17,7 @@ import {
   LineOne,
   LineTwo,
   MobileNav,
+  StyledImg,
 } from "./styles";
 import Logo from "./assets/logo.png";
 
@@ -37,7 +38,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Link to={HOME_ROUTE}>
-        <img src={Logo} style={{ height: "95px" }} alt="Logo " />
+        <StyledImg src={Logo} alt="Logo " />
       </Link>
       <Flex>
         <StyledList>

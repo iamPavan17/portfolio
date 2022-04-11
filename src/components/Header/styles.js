@@ -127,6 +127,14 @@ const MobileNav = styled.div`
   }
 `;
 
+const StyledImg = styled.img`
+  height: 90px;
+
+  @media (max-width: 750px) {
+    height: 85px;
+  }
+`;
+
 export {
   StyledHeader,
   StyledList,
@@ -134,4 +142,5 @@ export {
   LineOne,
   LineTwo,
   MobileNav,
+  StyledImg,
 };

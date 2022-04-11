@@ -3,7 +3,9 @@ import { Flex, Text, Link } from "components/UI";
 
 import { textTheme } from "App/theme/text.theme";
 import HeartIcon from "./assets/heart.svg";
-import { StyledFooter, Img, onHoverStyle, StyledFlex } from "./styles";
+import LinkedinIcon from "./assets/linkedin.svg";
+import MailIcon from "./assets/mail.svg";
+import { StyledFooter, onHoverStyle, StyledFlex } from "./styles";
 
 export default function Footer() {
   return (
@@ -13,44 +15,31 @@ export default function Footer() {
           <Text fontSize={textTheme.fontSize.title}>
             &copy; {`${new Date().getFullYear()}`} Designed and Developed with
           </Text>
-          <Img src={HeartIcon} alt="Heart" />
+          <img src={HeartIcon} alt="Heart" style={{ height: "17px" }} />
         </Flex>
-        <Flex alignItems="center" justifyContent="center" gap="1.2rem">
-          <Link
-            to={{ pathname: "https://instagram.com" }}
-            css={onHoverStyle}
-            target={"_blank"}
-          >
-            <Text fontSize={textTheme.fontSize.title}>IG</Text>
-          </Link>
-          <Link
-            to={{ pathname: "https://twitter.com" }}
+        <Flex alignItems="center" justifyContent="center" gap="2rem">
+          {/* <Link
+            to={{ pathname: "https://twitter.com/impavan17" }}
             css={onHoverStyle}
             target={"_blank"}
           >
             <Text fontSize={textTheme.fontSize.title}>TW</Text>
+          </Link> */}
+
+          <Link
+            to={{ pathname: "mailto:iampavan05@gmail.com" }}
+            css={onHoverStyle}
+            target={"_blank"}
+          >
+            <img src={MailIcon} alt="Mail" style={{ height: "17px" }} />
           </Link>
 
           <Link
-            to={{ pathname: "https://linkedin.com" }}
+            to={{ pathname: "https://linkedin.com/in/iampavan17" }}
             css={onHoverStyle}
             target={"_blank"}
           >
-            <Text fontSize={textTheme.fontSize.title}>LI</Text>
-          </Link>
-          <Link
-            to={{ pathname: "https://dribbble.com" }}
-            css={onHoverStyle}
-            target={"_blank"}
-          >
-            <Text fontSize={textTheme.fontSize.title}>DR</Text>
-          </Link>
-          <Link
-            to={{ pathname: "https://facebook.com" }}
-            css={onHoverStyle}
-            target={"_blank"}
-          >
-            <Text fontSize={textTheme.fontSize.title}>FB</Text>
+            <img src={LinkedinIcon} alt="Linkedin" style={{ height: "17px" }} />
           </Link>
         </Flex>
       </StyledFlex>
