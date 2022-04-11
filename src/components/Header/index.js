@@ -18,6 +18,7 @@ import {
   LineTwo,
   MobileNav,
 } from "./styles";
+import Logo from "./assets/logo.png";
 
 export default function Header() {
   let location = useLocation();
@@ -36,9 +37,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Link to={HOME_ROUTE}>
-        <Text fontSize={textTheme.fontSize.h3} fontWeight={"bold"}>
-          PORTFOLIO .
-        </Text>
+        <img src={Logo} style={{ height: "95px" }} alt="Logo " />
       </Link>
       <Flex>
         <StyledList>

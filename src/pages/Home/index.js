@@ -28,7 +28,7 @@ export default function About() {
               fontWeight={"bold"}
               textAlign="center"
             >
-              Hello, I'm Mathilde, and I am a product designer.
+              Hello, I'm Pavan.
             </Text>
 
             <Text
@@ -36,8 +36,14 @@ export default function About() {
               lineHeight={1.4}
               textAlign="center"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit dapibus
-              porta lorem morbi hendrerit. Maecenas et, at quis purus.
+              I'm a Full Stack Engineer based in Bengaluru, India. Currently
+              employed at{" "}
+              <Link
+                to={{ pathname: "https://geekyants.com" }}
+                target={"_blank"}
+              >
+                @GeekyAnts
+              </Link>
             </Text>
 
             <Flex gap="1.8rem">

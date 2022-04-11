@@ -1,11 +1,12 @@
 import React from "react";
 
 import Helmet from "components/Helmet";
-import { Text, Flex, Card, Button } from "components/UI";
+import { Text, Flex, Card, Button, Link } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 
 import { offlineExpData, offlineEduData } from "./constants";
 import { Section, Container, spacing, spacingB } from "./styles";
+import Pdf from "./assets/Resume.pdf";
 
 export default function About() {
   return (
@@ -25,7 +26,9 @@ export default function About() {
           <Text fontSize={textTheme.fontSize.h4} fontWeight={"bold"}>
             Experience
           </Text>
-          <Button primary>Download CV</Button>
+          <Link to={{ pathname: Pdf }} target={"_blank"}>
+            <Button primary>Download CV</Button>
+          </Link>
         </Flex>
 
         <Flex flexDirection="column" gap="3rem">

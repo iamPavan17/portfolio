@@ -37,7 +37,7 @@ export default function Contact() {
 
         <Text fontSize={textTheme.fontSize.h5}>
           Fill the form or just send me an email on &nbsp;
-          <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+          <a href="mailto:info@yoursite.com">iampavan05@gmail.com</a>
         </Text>
 
         <FormContainer>

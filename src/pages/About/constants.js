@@ -4,55 +4,33 @@ const offlineExpData = [
   {
     id: 1,
     year: "2020 - Present",
-    title: "JOB POSITION",
-    body: "Company Name",
+    title: "Software Engineer",
+    body: "GeekyAnts",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
+      "Assisted the development of multiple web applications. Mostly worked on Fintech projects.",
     descriptionTwo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
+      "Assisted the training of graduate interns in development processes.",
   },
   {
     id: 2,
-    year: "2017 - 2020",
-    title: "JOB POSITION",
-    body: "Company Name",
+    year: "2019",
+    title: "Trainee Soft. Engineer",
+    body: "GeekyAnts",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
-    descriptionTwo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
-  },
-  {
-    id: 3,
-    year: "2016 - 2017",
-    title: "JOB POSITION",
-    body: "Company Name",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
-    descriptionTwo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
+      "Trained in web frontend development and backend development with best practices.",
+    descriptionTwo: " ",
   },
 ];
 
 const offlineEduData = [
   {
     id: 1,
-    year: "2014 - 2016",
-    title: "UNIVERSITY NAME",
-    body: "Degree",
+    year: "2016 - 2019",
+    title: "PES UNIVERSITY",
+    body: "Masters in Computers",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
-    descriptionTwo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
-  },
-  {
-    id: 2,
-    year: "2012 - 2014",
-    title: "UNIVERSITY NAME",
-    body: "Degree",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta. Etiam luctus vitae diam id sagittis. Curabitur libero dui, aliquam at interdum.",
-    descriptionTwo:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis nulla sed elit scelerisque porta.",
+      "Received CNR roa Merit Scholarship thrice for an exceptional performance in academics.",
+    descriptionTwo: " ",
   },
 ];
 
