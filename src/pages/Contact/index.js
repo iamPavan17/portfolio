@@ -50,11 +50,11 @@ export default function Contact() {
         </Text>
 
         {/* A little help for the Netlify post-processing bots */}
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-          <input type="text" name="name" />
-          <input type="text" name="email" />
-          <input type="text" name="subject" />
-          <input type="text" name="message" />
+        <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
+          <input name="name" />
+          <input name="email" />
+          <input name="subject" />
+          <input name="message" />
         </form>
 
         <FormContainer>
