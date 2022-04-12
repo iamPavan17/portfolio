@@ -20,7 +20,7 @@ const offlineProjectData = [
     logo: "https://i.ibb.co/59bGQrK/portfolio.png",
     title: "Portfolio Website",
     body: "My personal portfolio website.",
-    url: "https://google.com/",
+    url: "https://iampa.netlify.app/",
   },
 ];
 
