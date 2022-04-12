@@ -8,6 +8,10 @@ const StyledHeader = styled.header`
   height: 8.6rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 
+  @media (max-width: 750px) {
+    padding: 0 3.6rem;
+  }
+
   .mobile-nav-active {
     transform: translateY(0px);
     opacity: 1;
