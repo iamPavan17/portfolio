@@ -21,6 +21,7 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -33,6 +34,9 @@ export default function Contact() {
       body: encodeUri({ "form-name": "contact", ...data }),
     })
       .then(({ status }) => {
+        if (status === 200) {
+          reset();
+        }
         if (status !== 200) {
           toast.error("Something went wrong!");
           return;
