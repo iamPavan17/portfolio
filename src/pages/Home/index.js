@@ -35,14 +35,15 @@ export default function About() {
               lineHeight={1.4}
               textAlign="center"
             >
-              I'm a Full Stack Engineer based in Bengaluru, India. Currently
+              I'm a Full Stack Engineer based in Bengaluru, India.
+              {/* Currently
               employed at{" "}
               <Link
                 to={{ pathname: "https://geekyants.com" }}
                 target={"_blank"}
               >
                 @GeekyAnts
-              </Link>
+              </Link> */}
             </Text>
 
             <Flex gap="1.8rem">
