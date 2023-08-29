@@ -1,11 +1,14 @@
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import toast, { Toaster } from "react-hot-toast";
+import "animate.css";
 
 import Helmet from "components/Helmet";
-import { Text, Grid, Button, Input } from "components/UI";
+import { Text, Grid, Button, Input, Flex } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
 import { isError, encodeUri } from "utils";
+import InfoIcon from "./assets/info.svg";
 
 import { schema } from "./schema";
 import {
@@ -15,6 +18,7 @@ import {
   spacing,
   InputWrapper,
   StyledGrid,
+  spacingB,
 } from "./styles";
 
 export default function Contact() {
@@ -22,10 +26,22 @@ export default function Contact() {
     register,
     handleSubmit,
     reset,
+    watch,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
   });
+
+  const [showMessageInfo, setShowMessageInfo] = useState(false);
+
+  useEffect(() => {
+    const subscription = watch((value, { name }) => {
+      if (name === "message") {
+        setShowMessageInfo(Boolean(value.message));
+      }
+    });
+    return () => subscription.unsubscribe();
+  }, [watch]);
 
   const onSubmit = (data) => {
     fetch("/", {
@@ -106,6 +122,20 @@ export default function Contact() {
               </InputWrapper>
             </Grid>
             <Button>Submit</Button>
+            {showMessageInfo && (
+              <Flex
+                gap="0.8rem"
+                css={spacingB}
+                className="animate__animated animate__fadeIn"
+              >
+                <img src={InfoIcon} alt="Info" style={{ height: "18px" }} />
+                <Text fontSize={textTheme.fontSize.body} lineHeight={1.3}>
+                  Don't forget to mention your point of contact, unless you want
+                  your messages to be lost in the Bermuda Triangle of
+                  communication! 🌴📞
+                </Text>
+              </Flex>
+            )}
           </form>
         </FormContainer>
       </Container>

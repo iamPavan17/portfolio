@@ -42,6 +42,10 @@ const spacing = css`
   margin-bottom: 4.4rem;
 `;
 
+const spacingB = css`
+  margin-top: 1.8rem;
+`;
+
 const StyledGrid = styled(Grid)`
   @media (max-width: 600px) {
     grid-template-columns: 1fr !important;
@@ -49,4 +53,12 @@ const StyledGrid = styled(Grid)`
   }
 `;
 
-export { Section, Container, FormContainer, spacing, InputWrapper, StyledGrid };
+export {
+  Section,
+  Container,
+  FormContainer,
+  spacing,
+  InputWrapper,
+  StyledGrid,
+  spacingB,
+};
