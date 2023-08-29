@@ -52,6 +52,7 @@ export default function Contact() {
       .then(({ status }) => {
         if (status === 200) {
           reset();
+          setShowMessageInfo(false);
         }
         if (status !== 200) {
           toast.error("Something went wrong!");
