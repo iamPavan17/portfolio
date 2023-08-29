@@ -34,6 +34,14 @@ const GlobalStyle = createGlobalStyle`
       font-size: 50%;
     }
   }
+
+  .project-list {
+    margin-left: 14px;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
 `;
 
 export default GlobalStyle;

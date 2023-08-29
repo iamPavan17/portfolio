@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Parser from "html-react-parser";
 
 import { Text, Link } from "components/UI";
 import { textTheme } from "App/theme/text.theme";
@@ -21,7 +22,7 @@ export function CardTwo({ data }) {
           lineHeight={1.4}
           color={"caption"}
         >
-          {body}
+          {Parser(body)}
         </Text>
 
         <img src={ArrowIcon} alt="Arrow right " />
