@@ -6,6 +6,7 @@ import HeartIcon from "./assets/heart.svg";
 import LinkedinIcon from "./assets/linkedin.svg";
 import MailIcon from "./assets/mail.svg";
 import GitIcon from "./assets/github.svg";
+import LeetCodeIcon from "./assets/leetcode.svg";
 import { StyledFooter, onHoverStyle, StyledFlex } from "./styles";
 
 export default function Footer() {
@@ -27,18 +28,25 @@ export default function Footer() {
             <img src={MailIcon} alt="Mail" style={{ height: "18px" }} />
           </Link>
           <Link
-            to={{ pathname: "https://github.com/iamPavan17" }}
-            css={onHoverStyle}
-            target={"_blank"}
-          >
-            <img src={GitIcon} alt="Linkedin" style={{ height: "18px" }} />
-          </Link>
-          <Link
             to={{ pathname: "https://linkedin.com/in/iampavan17" }}
             css={onHoverStyle}
             target={"_blank"}
           >
             <img src={LinkedinIcon} alt="Linkedin" style={{ height: "18px" }} />
+          </Link>
+          <Link
+            to={{ pathname: "https://leetcode.com/iamPavan/" }}
+            css={onHoverStyle}
+            target={"_blank"}
+          >
+            <img src={LeetCodeIcon} alt="Linkedin" style={{ height: "18px" }} />
+          </Link>
+          <Link
+            to={{ pathname: "https://github.com/iamPavan17" }}
+            css={onHoverStyle}
+            target={"_blank"}
+          >
+            <img src={GitIcon} alt="Linkedin" style={{ height: "18px" }} />
           </Link>
         </Flex>
       </StyledFlex>
