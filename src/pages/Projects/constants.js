@@ -8,7 +8,7 @@ const offlineProjectData = [
     body: `
       <ul class="project-list">
         <li>An extension for the VSCode IDE, allows you to seamlessly adjust and fine-tune your theme settings while witnessing real-time changes with live preview.</li>
-        <li>The extension boasts over <b>3,500+</b> installations in the marketplace.</li>
+        <li>The extension boasts over <b>7,500+</b> installations in the marketplace.</li>
         <li>Tech used - TypeScript, Svelte.</li>
       </ul>
     `,
@@ -16,6 +16,18 @@ const offlineProjectData = [
   },
   {
     id: 2,
+    logo: "",
+    title: "Gitrain",
+    body: `
+      <ul class="project-list">
+        <li>A CLI tool for emoji-powered commits and automated GitHub pull request creation, with built-in support for including AB#123 (Azure Boards) or JIRA-123 references in PR titles.</li>
+        <li>It simplifies the process of creating pull requests with emojis and references, enhancing your Git workflow.</li>  
+      </ul>
+    `,
+    url: "https://www.npmjs.com/package/gitrain",
+  },
+  {
+    id: 3,
     logo: "https://i.ibb.co/XtbmDHQ/homebrew.png",
     title: "Home Brew Coffees",
     body: `
@@ -28,7 +40,7 @@ const offlineProjectData = [
     url: "https://homebrewcoffees.com/",
   },
   {
-    id: 3,
+    id: 4,
     logo: "https://i.ibb.co/59bGQrK/portfolio.png",
     title: "Portfolio Website",
     body: "My personal portfolio website.",
